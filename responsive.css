@@ -1,0 +1,271 @@
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1140px !important;
+  }
+  .container-hero {
+    max-width: 1340px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .hero {
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 150px 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .welcome-sec {
+    padding-bottom: 90px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+  .welcome-sec-right .img1 {
+    padding-left: 50px;
+  }
+  .welcome-sec-right .img2 {
+    left: 0px;
+  }
+}
+@media (max-width: 1024px) {
+  .testimonials {
+    padding-bottom: 100px !important;
+  }
+  .hero {
+    padding: 80px 10px;
+  }
+  .welcome-sec-right .img2 {
+    left: 0px;
+    bottom: -150px;
+  }
+  .top-heading h2 {
+    font-size: 28px;
+  }
+  .top-heading span {
+    font-size: 22px;
+  }
+  section {
+    padding: 70px 0;
+  }
+  .welcome-sec {
+    padding-bottom: 190px;
+  }
+  .know-more-left span {
+    font-size: 22px;
+  }
+  .know-more-left h2 {
+    font-size: 28px;
+  }
+  .why-choose-left .img2 {
+    bottom: -220px;
+  }
+  .blog-content h3 {
+    font-size: 22px;
+    line-height: 1.3;
+  }
+  .ft-menu ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome-sec .top-heading p {
+    max-width: 100%;
+  }
+  .welcome-sec {
+    padding-bottom: 60px;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  .menu > ul {
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    height: 100%;
+    margin-top: 70px !important;
+  }
+  .menu > ul > li {
+    width: 100%;
+  }
+  .menu > ul > li:last-child a {
+    border: none;
+  }
+  .menu > ul > li > a {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+  header .menu li::after {
+    display: none;
+  }
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+  }
+  .bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 55px;
+    background: #1f2544;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 30px;
+  }
+  .times {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #1f2544;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 30px;
+    position: absolute;
+    right: 0.6rem;
+    top: 2rem;
+  }
+  header.show .menu {
+    left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .why-choose {
+    padding-bottom: 260px;
+  }
+  .why-choose-el ul li {
+    text-align: left;
+  }
+  .blog-content h3 a {
+    font-size: 22px;
+    line-height: 1.2em;
+  }
+  .blog-sec .top-heading h2 {
+    margin-bottom: 0;
+  }
+  .testimonials {
+    padding-bottom: 80px !important;
+  }
+  .testi-pagination .swiper-pagination {
+    bottom: -33px !important;
+  }
+  .testi-content {
+    padding: 40px 20px;
+  }
+  .why-choose-el:last-child {
+    margin-bottom: 0;
+  }
+  .menu-btn {
+    gap: 0 4px;
+  }
+  header .logo a img {
+    width: 150px;
+  }
+  .menu-btn a.btnn {
+    padding: 8px 10px;
+  }
+  .bars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: #1f2544;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 25px;
+  }
+  .times {
+    width: 35px;
+    height: 35px;
+  }
+  .blog-content h3 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .why-choose-el ul {
+    max-width: 400px;
+    margin: auto !important;
+  }
+  .why-choose-left .img1 {
+  }
+  .why-choose-left .img2 {
+    width: auto;
+    height: auto;
+    margin-top: 12px;
+  }
+  .why-choose-left .img2 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .offer-container {
+    text-align: center;
+  }
+  .offer-container .info h4,
+  .offer-container .info p {
+    text-align: center;
+  }
+  .know-more-left {
+    text-align: center;
+  }
+  section {
+    padding: 40px 0;
+  }
+  .top-heading h2,
+  .know-more-left h2 {
+    font-size: 25px;
+  }
+  .welcome-sec-left {
+    text-align: center;
+  }
+  .hero {
+    text-align: center;
+  }
+  h1 {
+    font-size: 30px;
+    line-height: 1.2em;
+  }
+  .welcome-sec {
+    padding-bottom: 190px !important;
+  }
+}
+@media (min-width: 340px) and (max-width: 767px) {
+  .menu-btn {
+    gap: 0 10px;
+  }
+}
+@media (max-width: 575px) {
+  .home-form form {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+  .home-form form input.button {
+    width: 100%;
+  }
+  .blog-sec {
+    padding-bottom: 0;
+  }
+}
