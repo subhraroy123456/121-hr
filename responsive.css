@@ -13,14 +13,40 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1600px) {
-  .hero {
+  .swiper-hero-bg {
     background-size: cover !important;
-    background-position: center !important;
-    padding: 150px 20px;
+    background-position: top 2000px !important;
+    /* padding: 150px 20px; */
+    min-height: 90vh;
+  }
+  .container-hero {
+    min-height: 90vh;
+  }
+  .inner-banner .container-hero {
+    min-height: initial;
   }
 }
-
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .hero-container {
+    transform: translateX(14px);
+  }
+}
+@media (max-width: 1399px) {
+  .hero-container h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+  .hero-container {
+    padding: 40px 30px;
+  }
+}
 @media (max-width: 1199px) {
+  .pricing-acc-top h4 {
+    font-size: 32px;
+  }
+  .hr-srv-sec3 {
+    padding-bottom: 40px;
+  }
   .welcome-sec {
     padding-bottom: 90px;
   }
@@ -36,12 +62,50 @@
   }
 }
 @media (max-width: 1024px) {
+  .pricing-acc-top .icon span {
+    transform: translateX(0px) translateY(-1px) !important;
+  }
+  .blog-single-sec1 .info-flex a span {
+    font-size: 16px !important;
+  }
+  .pricing-acc-top .icon span {
+    font-size: 25px;
+  }
+  .pricing-acc-top .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .pricing-acc-top h4 {
+    font-size: 28px;
+  }
+  .blog-pg-sec form .button {
+    min-width: 100px;
+  }
+  .hr-sec3-left1 .img2 {
+    bottom: -150px !important;
+  }
+  .hr-srv-sec3 {
+    padding-bottom: 120px !important;
+  }
+  .hr-srv-sec1 {
+    padding-bottom: 150px;
+  }
+  .hr-srv-sec1 .welcome-sec-left h3 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .row-btm-hr {
+    margin-top: 150px !important;
+  }
+  .hero-container {
+    transform: translateX(0);
+  }
   .testimonials {
     padding-bottom: 100px !important;
   }
-  .hero {
-    padding: 80px 10px;
-  }
+  /* .swiper-hero-bg {
+    padding: 40px 10px;
+  } */
   .welcome-sec-right .img2 {
     left: 0px;
     bottom: -150px;
@@ -77,6 +141,9 @@
 }
 
 @media (max-width: 992px) {
+  .hr-srv-sec3 {
+    padding-bottom: 20px !important;
+  }
   .welcome-sec .top-heading p {
     max-width: 100%;
   }
@@ -91,6 +158,7 @@
     height: 100%;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
     transition: all 0.3s ease-in-out;
   }
   .menu > ul {
@@ -144,16 +212,146 @@
     font-size: 30px;
     position: absolute;
     right: 0.6rem;
-    top: 2rem;
+    top: 1rem;
   }
   header.show .menu {
     left: 0;
   }
+  header nav {
+    padding: 16px 0;
+  }
+  header.fixed nav {
+    padding: 8px 0 !important;
+  }
+  header .container-flex .menu > ul > li {
+    padding: 0;
+  }
+  header.fixed .container-flex .menu > ul > li {
+    padding: 0px 0;
+  }
+  header .menu ul > li > .sub-menu {
+    width: 100%;
+  }
+  header .menu ul > li > .sub-menu li a {
+    padding: 10px 20px !important;
+  }
+  header .menu ul > li > .sub-menu {
+    opacity: 1;
+    display: none;
+  }
+  header .menu ul > li:hover > .sub-menu {
+    opacity: 1;
+  }
+  header .menu ul > li > .sub-menu.active {
+    display: block;
+  }
 }
 
 @media (max-width: 767px) {
+  .con-page-info {
+    max-width: 141px;
+    margin: 20px auto 0;
+  }
+  .load-more-btn {
+    display: none;
+  }
+  .blog-single-sec1 .info-flex a span {
+    font-size: 16px;
+  }
+  .con-page-sec-left .top-heading {
+    text-align: center;
+  }
+  .pricing-acc-top .icon {
+    max-width: 30px;
+    height: 30px;
+  }
+  .pricing-acc-top .icon span {
+    transform: translateX(0px) translateY(-1px) !important;
+  }
+  .pricing-acc-btm p {
+    font-size: 16px;
+  }
+  .acc-btm span {
+    font-size: 25px;
+  }
+  .pricing-acc-top h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .pricing-acc-top {
+    padding: 10px 20px;
+  }
+  .pagination-item ul li {
+    width: 45px;
+    height: 45px;
+  }
+  .blog-single-sec1 {
+    padding: 40px 0;
+  }
+  .blog-pg-sec form {
+    justify-content: center;
+  }
+  .why-choose-left-sm2 .img2 {
+    bottom: -116px;
+  }
+  .hr-srv-sec1 {
+    padding: 40px 0 40px !important;
+  }
+  .hr-srv-sec3 {
+    padding-bottom: 0px !important;
+  }
+  .hr-sec3-left p {
+    padding-top: 127px !important;
+  }
+  .hr-srv-sec1 p {
+    text-align: center !important;
+  }
+  .row-btm-hr {
+    margin-top: 20px !important;
+  }
+  .hr-pg-sec-left p {
+    padding-top: 230px;
+  }
+  .hr-srv-sec1 .welcome-sec-left h3 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .con-page-info {
+    flex-direction: column;
+    gap: 15px 0;
+    align-items: flex-start;
+  }
+  .about-page-why-choose {
+    padding-bottom: 0 !important;
+  }
+  .inner-banner {
+    padding: 70px 0;
+  }
+  .inner-banner .hero-container {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  .inner-banner .row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .offer-sec .testi-pagination,
+  .blog-sec .testi-pagination {
+    text-align: center;
+    margin: 25px 0 0;
+  }
+  .why-choose-inner-sm {
+    padding-top: 240px;
+  }
+  .welcome-sec {
+    padding-bottom: 0px;
+  }
+  .welcome-sec-left-sm p {
+    padding-top: 160px;
+  }
   .why-choose {
-    padding-bottom: 260px;
+    padding-bottom: 20px;
   }
   .why-choose-el ul li {
     text-align: left;
@@ -209,8 +407,6 @@
     max-width: 400px;
     margin: auto !important;
   }
-  .why-choose-left .img1 {
-  }
   .why-choose-left .img2 {
     width: auto;
     height: auto;
@@ -245,11 +441,24 @@
     text-align: center;
   }
   h1 {
-    font-size: 30px;
+    font-size: 30px !important;
     line-height: 1.2em;
   }
-  .welcome-sec {
+  .hero-container p {
+    margin: 10px 0 20px;
+  }
+  .btnn {
+    padding: 12px 30px;
+  }
+  .hero-container {
+    padding: 40px 10px;
+  }
+  /* .welcome-sec {
     padding-bottom: 190px !important;
+  } */
+  .swiper-hero-bg,
+  .container-hero {
+    min-height: 80vh;
   }
 }
 @media (min-width: 340px) and (max-width: 767px) {
@@ -258,6 +467,9 @@
   }
 }
 @media (max-width: 575px) {
+  .hero .testi-pagination {
+    bottom: 61px;
+  }
   .home-form form {
     flex-direction: column;
     gap: 10px 0;
@@ -265,7 +477,23 @@
   .home-form form input.button {
     width: 100%;
   }
-  .blog-sec {
+  /* .blog-sec {
     padding-bottom: 0;
+  } */
+  .blog-pg-sec form {
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px 0;
+  }
+  .blog-pg-sec form .button,
+  .blog-pg-sec form input.search-inp {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .swiper-hero-bg,
+  .container-hero {
+    min-height: 90vh;
   }
 }
